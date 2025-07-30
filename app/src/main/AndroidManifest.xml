@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trial">
         <activity
+            android:name=".RegisterScreen"
+            android:exported="false" />
+        <activity
+            android:name=".LoginScreen"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

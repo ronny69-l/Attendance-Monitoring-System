@@ -8,7 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".LoginScreen">
 
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
@@ -156,34 +156,62 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
                 android:layout_marginHorizontal="12dp"
+                android:gravity="center"
+
                 >
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_weight="1"
-                    android:background="@color/material_dynamic_neutral80"
-                    />
-                <TextView
+                <androidx.cardview.widget.CardView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Or"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:layout_marginHorizontal="5dp"
-                    android:textAlignment="center"
-                    android:textStyle="bold"
-                    android:letterSpacing=".05"
-                    />
+                    app:cardCornerRadius="8dp"
+                    android:layout_marginHorizontal="15dp"
+                    android:backgroundTint="#00000000"
+                    >
+                    <ImageView
+                        android:id="@+id/twitter"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/twitter"
+                        />
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#00000000"
+                    android:layout_marginHorizontal="55dp"
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_height="3dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_weight="1"
-                    android:background="@color/material_dynamic_neutral80"
-                    />
+                    >
+                    <ImageView
+                        android:id="@+id/facebook"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/fb"
+                        />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="4dp"
+                    android:backgroundTint="#00000000"
+                    android:layout_marginHorizontal="15dp"
+                    >
+                    <ImageView
+                        android:id="@+id/instagram"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/insta"
+                        android:layout_gravity="center"
+                        />
+                </androidx.cardview.widget.CardView>
             </LinearLayout>
 
         </LinearLayout>
